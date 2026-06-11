@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAlerta - Vegetação, Poluição e Queimadas</title>
+    <style>
+        /* --- Configurações Gerais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Cabeçalho (Header) --- */
+        header {
+            background: linear-gradient(135deg, #1e4620, #0f2a11);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* --- Container Principal --- */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* --- Grid de Tópicos --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #ccc;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Cores temáticas para cada Card */
+        .card-vegetacao { border-top-color: #2e7d32; }
+        .card-poluicao { border-top-color: #757575; }
+        .card-queimadas { border-top-color: #d84315; }
+
+        .card h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-vegetacao h2 { color: #2e7d32; }
+        .card-poluicao h2 { color: #424242; }
+        .card-queimadas h2 { color: #d84315; }
+
+        /* --- Seção de Conscientização (Destaque) --- */
+        .alerta-box {
+            background-color: #fff3e0;
+            border-left: 6px solid #ffb74d;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+        }
+
+        .alerta-box h3 {
+            color: #e65100;
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Rodapé (Footer) --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O Equilíbrio em Risco</h1>
+        <p>Entenda o impacto das ações humanas na vegetação, no ar e no clima global.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card card-vegetacao">
+                <h2>🌱 A Vegetação</h2>
+                <p>As florestas e biomas são os pulmões e reguladores térmicos do nosso planeta. Elas absorvem o dióxido de carbono ($CO_2$), protegem o solo contra a erosão, abrigam a maior parte da biodiversidade terrestre e são fundamentais para o ciclo da água.</p>
+            </div>
+
+            <div class="card card-poluicao">
+                <h2>🏭 A Poluição</h2>
+                <p>A emissão de gases poluentes por indústrias e veículos degrada a qualidade do ar e acelera as mudanças climáticas. Essa poluição também afeta diretamente a saúde das plantas, reduzindo a capacidade da vegetação de realizar a fotossíntese.</p>
+            </div>
+
+            <div class="card card-queimadas">
+                <h2>🔥 As Queimadas</h2>
+                <p>Sejam naturais ou criminosas, as queimadas destroem ecossistemas inteiros em poucas horas. Elas liberam toneladas de gases estufa de uma só vez, eliminam a cobertura vegetal protetora e poluem a atmosfera com fuligem e fumaça tóxica.</p>
+            </div>
+
+        </div>
+
+        <div class="alerta-box">
+            <h3>🔄 O Ciclo Destrutivo</h3>
+            <p>Existe uma conexão perigosa entre esses três elementos: a <strong>poluição</strong> intensifica o aquecimento global, o que torna o clima mais seco e propício para o aumento de <strong>queimadas</strong>. Por sua vez, o fogo destrói a <strong>vegetação</strong>, que seria a única defesa natural para absorver os poluentes do ar. Quebrar esse ciclo é urgente.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EcoAlerta. Criado para conscientização ambiental.</p>
+    </footer>
+
+</body>
+</html>
